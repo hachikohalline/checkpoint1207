@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="">
+    <link rel="icon shortcut" href="https://bit.ly/3e81G7F">
+    <title>Escritora Aline Madruga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <img src="https://bit.ly/3e6aAm8" alt="a aline é uma escritora e potencialmente uma bruxa" id="capa">
+            <p id="chamada">O que você quer ler a seguir?</p>
+
+            <!-- iniciou o formulario -->
+            <form action="#" method="POST">
+                <!-- Seção de Dados Pessoais -->
+                <fieldset>
+                    <legend>Me conta sobre você!</legend>
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+
+                    <!-- pra selecionar os proximos é só dar ctrl d -->
+
+
+                </fieldset>
+
+                <!-- seção de gêneros literários -->
+                <fieldset>
+                    <legend>Qual seu gênero literário favorito?</legend>
+                    <select name="generos" id="generos">
+                        <option value="">Selecione uma opção</option>
+                        <option value="romance">Romance</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="terror">Terror</option>
+                        <option value="chicklit">Chick-lit</option>
+                        <option value="thriller">Thriller</option>
+                    </select>
+                </fieldset>
+
+                <!-- secao de formato -->
+                <fieldset>
+                    <legend>Formato favorito</legend>
+                    <input type="radio" name="formato" id="fisico" value="fisico" checked>
+                    <label for="fisico">Livro Físico</label>
+                    <input type="radio" name="formato" id="ebook" value="ebook">
+                    <label for="ebook">E-book</label>
+                </fieldset>
+
+                <!-- secao de formato -->
+                <fieldset>
+                    <legend>Fala comigo!</legend>
+                    <label for="mensagem">Sobre o que devo escrever?</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
+
+                </fieldset>
+                <!-- secao de botoes -->
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
